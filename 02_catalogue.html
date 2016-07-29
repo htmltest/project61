@@ -22,12 +22,14 @@
         <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
         <script src="js/jscrollpane/jquery.mousewheel.js"></script>
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=device-width" />
     </head>
 
     <body>
+        <a href="windows/warning.html" class="warning-link"></a>
 
         <!-- wrapper -->
         <div class="wrapper">
@@ -191,6 +193,7 @@
                                     </div>
 
                                     <div class="form-submit"><input type="submit" value="Применить" /></div>
+                                    <div class="form-reset"><input type="reset" value="Сбросить" /></div>
 
                                 </form>
                             </div>
@@ -246,6 +249,10 @@
                                     <a href="#" class="catalogue-filter-link" data-alttext="Свернуть">Фильтр</a>
                                 </div>
                                 <!-- catalogue header END -->
+
+                                <!-- catalogue hint -->
+                                <div class="catalogue-hint">Онлайн заказ вина временно недоступен, вы можете ознакомиться с нашим ассортиментов и купить вино в одном из магазинов нашей сети.</div>
+                                <!-- catalogue hint END -->
 
                                 <!-- catalogue list -->
                                 <div class="catalogue-list">

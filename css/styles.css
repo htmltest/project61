@@ -118,6 +118,10 @@ form {margin:25px 0; padding:0}
 .form-submit input {vertical-align:top; width:100%; height:50px; margin:0; padding:0; outline:none; border:1px solid #87b396; background:transparent; -webkit-appearance:none; cursor:pointer; color:#231f20; font:15px/48px "PT Serif", serif; text-transform:uppercase; border-radius:0}
 .form-submit input:hover {border-color:#e7f0ea; background:#e7f0ea}
 
+.form-reset {margin:44px 0 20px 0}
+.form-reset input {vertical-align:top; width:100%; height:50px; margin:0; padding:0; outline:none; border:none; background:transparent; -webkit-appearance:none; cursor:pointer; color:#231f20; font:15px/48px "PT Serif", serif; text-transform:uppercase; border-radius:0}
+.form-reset input:hover {color:#0f672d}
+
 .form-required {text-align:center}
 .form-required span {color:#f00}
 
@@ -473,7 +477,7 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
     .category-1 .category-inner {background-image:url(../images/category-1-tablet.jpg)}
     .category-2 .category-inner {background-image:url(../images/category-2-tablet.jpg)}
     .category-3 .category-inner {background-image:url(../images/category-3-tablet.jpg); background-position:right bottom}
-    .category-4 .category-inner {background-image:url(../images/category-4-tablet.jpg); background-position:right bottom}
+    .category-4 .category-inner {background-image:url(../images/category-4-tablet.jpg); background-position:right bottom; min-height:280px}
     .category-5 .category-inner {background-image:url(../images/category-5-tablet.jpg); background-position:right bottom}
     .category-name {padding:32px 0 0 0}
     .category-1 .category-name {padding:252px 0 0 0}
@@ -612,12 +616,11 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
     .about {display:none}
 }
 
-.media {max-width:1140px; margin:40px auto 0 auto; position:relative}
-.media:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.media {display:table; width:100%; max-width:1140px; margin:40px auto 0 auto; position:relative}
 
 .media-title {font:30px/30px "PT Serif", serif; color:#231f20; padding:44px 0 0 40px}
 
-.main-news {width:50%; box-sizing:border-box; border-right:15px solid #fff; background:#f5f5f5}
+.main-news {display:table-cell; width:50%; box-sizing:border-box; border-right:15px solid #fff; background:#f5f5f5}
 .main-news-list {padding:14px 40px 40px 40px}
 .main-news-item {border-top:1px solid #e9e9e9; padding:26px 0 29px 0}
 .main-news-item:first-child {border:none}
@@ -629,17 +632,11 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
 .main-news-all {margin:19px 0 0 0; display:block; border:1px solid #82ae91; color:#231f20; height:38px; font:15px/38px "PT Serif", serif; text-align:center; text-transform:uppercase; text-decoration:none}
 .main-news-all:hover {border-color:#dee7e1; background:#dee7e1}
 
-.main-gallery {width:50%; box-sizing:border-box; border-left:15px solid #fff; position:absolute; right:0; top:0; height:100%}
-.main-gallery a {display:block; position:absolute; left:0; top:0; width:100%; height:100%; background-color:#f5f5f5; background-repeat:no-repeat; background-position:center; background-size:cover; text-decoration:none}
-.main-gallery a .media-title {color:#000}
-
-@media (max-width:1169px) {
-    .media {margin:0; background:#f5f5f5}
-    .media-title {padding-left:30px}
-    .main-news {border-right:30px solid #f5f5f5}
-    .main-news-list {padding-left:30px; padding-right:0}
-    .main-gallery {border-left:none}
-}
+.main-providers {display:table-cell; width:50%; box-sizing:border-box; border-left:15px solid #fff; background:#353532 url(../images/main-providers.jpg) no-repeat center; background-size:cover}
+.main-providers .media-title {color:#fff}
+.main-providers-text {color:#fff; padding:9px 40px 40px 40px}
+.main-providers-detail {margin:39px 0 0 0; display:block; border:1px solid rgba(255, 255, 255, .5); color:#fff; height:38px; font:15px/38px "PT Serif", serif; text-align:center; text-transform:uppercase; text-decoration:none}
+.main-providers-detail:hover {border-color:#fff; background:#fff; color:#231f20}
 
 @media (max-width:767px) {
     .media {display:none}
@@ -711,6 +708,7 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
 }
 
 .catalogue-filter {font-size:14px; margin-top:-6px}
+.catalogue-filter form:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .catalogue-filter .form-label {float:none; width:auto; padding:35px 0 0 0}
 .catalogue-filter .form-checkboxes {margin-top:10px}
 .catalogue-filter .form-checkbox {clear:left; opacity:1; margin-top:5px; padding:0 0 0 35px}
@@ -719,7 +717,17 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
 .catalogue-filter .form-checkbox.checked {font-weight:600}
 .catalogue-filter .form-checkbox.checked span {background-position:center; border-color:#231f20}
 .catalogue-filter .form-checkbox-all {clear:left; padding:0 0 0 35px}
-.catalogue-filter .form-submit input {color:#fff; background:#0f672d; border-color:#0f672d}
+.catalogue-filter .form-submit {float:left; width:130px}
+.catalogue-filter .form-submit input {height:40px; font-size:12px; line-height:38px; color:#fff; background:#0f672d; border-color:#0f672d}
+.catalogue-filter .form-reset {float:right; width:90px}
+.catalogue-filter .form-reset input {height:40px; font-size:12px; line-height:38px}
+
+@media (max-width:1169px) {
+    .catalogue-filter .form-submit {float:none; width:auto}
+    .catalogue-filter .form-submit input {font-size:16px; line-height:58px; height:60px}
+    .catalogue-filter .form-reset {float:none; width:auto; margin:0}
+    .catalogue-filter .form-reset input {height:60px; font-size:16px; line-height:58px}
+}
 
 @media (max-width:767px) {
     .catalogue-filter {font-size:20px; margin-top:-52px}
@@ -792,6 +800,11 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
     .open-filter .catalogue-filter-link {left:auto; right:-15px; padding:0 15px 0 18px; background-image:none; z-index:99}
     .catalogue-filter-link:after {content:""; display:block; width:0; height:0; position:absolute; right:-8px; top:0; border-left:8px solid #0f672d; border-top:20px solid transparent; border-bottom:20px solid transparent}
     .open-filter .catalogue-filter-link:after {left:-8px; right:auto; border-left:none; border-right:8px solid #0f672d}
+}
+
+.catalogue-hint {background:#f6f9f7; padding:22px 30px 26px 30px; margin:-10px 0 20px 0; border:1px solid #dbe8e0; text-align:center}
+@media (max-width:1169px) {
+    .catalogue-hint {padding-left:60px; padding-right:60px}
 }
 
 .catalogue-list {margin:10px -15px -54px -15px; font-size:0; line-height:0; letter-spacing:-1px}
@@ -1030,7 +1043,7 @@ table.detail-nutrit td:first-child {padding:6px 0; text-align:left; width:100%}
 .basket-weight {font-size:16px; color:#0f672d; padding:1px 0 0 0}
 .basket-row-price {display:table-cell; vertical-align:middle; white-space:nowrap; padding:20px 0 20px 30px; color:#231f20; font:20px/25px "PT Serif", serif; text-align:right; border-bottom:1px solid #ededed}
 .basket-row-count {display:table-cell; vertical-align:middle; width:68px; padding:20px 0 20px 30px; background:url(../images/basket-count.png) no-repeat 11px center; border-bottom:1px solid #ededed}
-.basket-row-count .form-select {margin:0}
+.basket-row-count .form-input input {height:50px; padding:11px 25px 12px 16px}
 .basket-row-summ {display:table-cell; vertical-align:middle; width:142px; padding:20px 0 20px 30px; color:#0f672d; font:20px/25px "PT Serif", serif; border-bottom:1px solid #ededed}
 .basket-row-summ span {margin:0 0 0 6px}
 .basket-delete {display:table-cell; vertical-align:middle; width:23px; border-bottom:1px solid #ededed}
@@ -1315,4 +1328,33 @@ footer {height:360px; margin:-360px 0 0 0; background:#f7f7f7; position:relative
     .shops-views.open ul li a {display:block; width:auto; height:40px; font-size:20px; line-height:40px; border:none; text-align:left; padding:0 10px; background:none}
     .shops-views.open ul li a:hover {background:#82ae91; color:#fff}
     .shops-views.open ul li.active a {background:#0f672d; color:#fff}
+}
+
+.warning-link {display:none}
+
+.window {position:absolute; left:0; top:0; width:100%; height:100%; z-index:99997; overflow:auto}
+.window-overlay {position:absolute; left:0; top:0; width:100%; height:100%; z-index:99998; background:rgba(255, 255, 255, .8)}
+.window-loading {position:absolute; left:50%; top:50%; width:105px; height:105px; margin:-52px 0 0 -52px; background:url(../images/loading.gif)}
+.window-container {position:absolute; z-index:99999; left:50%; top:50%}
+.window-container-load {position:fixed; left:-9999px; top:-9999px}
+.window-content {position:relative; background:#fff; border:1px solid #0f672d}
+.window-close {display:block; position:absolute; right:50px; top:55px; font:12px/12px "PT Serif", serif; text-transform:uppercase; padding:0 0 0 21px; text-decoration:none; background:url(../images/close.png) no-repeat}
+.window-close:hover {background-position:left -12px}
+
+@media (max-width:1169px) {
+    .window-close {width:0px; padding:0 0 0 12px; height:12px; overflow:hidden; font-size:0; line-height:0; letter-spacing:-1px; right:30px; top:46px}
+}
+
+.warning {width:748px; padding:0 50px 29px 50px}
+.warning .form-checkbox {opacity:1}
+.warning .form-checkbox span {background-position:99px 99px}
+.warning .form-checkbox.checked span {background-position:center}
+.warning .form-submit input {width:auto; padding-left:36px; padding-right:36px; border-color:#108e3b; background:#108e3b; color:#fff}
+.warning-rules-link {float:left; padding:14px 0 0 4px}
+
+@media (max-width:1169px) {
+    .warning {width:338px; padding-left:30px; padding-right:30px}
+    .warning .form-checkbox {float:none; font-size:14px; padding-top:1px}
+    .warning-rules-link {float:none; padding:0 0 0 58px; font-size:14px}
+    .warning .form-submit input {padding-left:0; padding-right:0; width:100%}
 }
