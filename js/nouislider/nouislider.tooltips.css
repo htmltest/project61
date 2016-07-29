@@ -1,0 +1,26 @@
+.noUi-tooltip {
+	display: block;
+	position: absolute;
+	text-align: center;
+    font-size: 14px;
+    color: #231f20;
+}
+
+.noUi-horizontal .noUi-handle-lower .noUi-tooltip {
+	top: -29px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+}
+.noUi-horizontal .noUi-handle-upper .noUi-tooltip {
+	top: -29px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+}
+.noUi-vertical .noUi-handle-lower .noUi-tooltip {
+	left: 120%;
+}
+.noUi-vertical .noUi-handle-upper .noUi-tooltip {
+	right: 120%;
+}

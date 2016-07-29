@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Николаев и Сыновья</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400|Open+Sans:400,400italic,600,700,700italic&amp;subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.tooltips.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="header-inner">
+                        <div class="header-contacts">
+                            <div class="header-phone">8 (499) 322-70-80</div>
+                            <div class="header-phone-time">с 10-00 до 18-00 часов</div>
+                        </div>
+
+                        <ul class="header-menu">
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                        </ul>
+
+                        <a href="#" class="header-cart">
+                            <div class="header-cart-icon"><span>5</span></div>
+                            <div class="header-cart-text">
+                                <div class="header-cart-title">Моя корзина</div>
+                                <div class="header-cart-value">5 товаров <span></span> 17 000 &#8381;</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="header-user"></a>
+
+                        <div class="logo"><a href="#"><img src="images/logo.png" alt="" width="166" height="84" /></a></div>
+                    </div>
+                </header>
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-menu">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Поставщикам</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="top-menu-link"></a>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#"><span>Сыр</span></a></li>
+                            <li><a href="#"><span>Вино</span></a></li>
+                            <li class="with-submenu">
+                                <a href="#"><span>Мясные деликатесы<em class="nomobile"> и колбасы</em></span></a>
+                                <div class="nav-hits">
+                                    <div class="nav-hits-inner">
+                                        <div class="nav-hits-menu">
+                                            <ul>
+                                                <li class="active"><a href="#">Колбасы Сasademont</a></li>
+                                                <li><a href="#">Мясо Диких Животных</a></li>
+                                                <li><a href="#">Паштеты</a></li>
+                                                <li><a href="#">Фазан</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav-hits-info">
+                                            <dl>
+                                                <dt>Производитель</dt>
+                                                <dd><a href="#">Casademont</a>, <a href="#">Лесная диковинка</a></dd>
+
+                                                <dt>Страна</dt>
+                                                <dd><a href="#">Россия</a>, <a href="#">Россия/Испания</a>, <a href="#">Франция</a></dd>
+
+                                                <dt>Продукт</dt>
+                                                <dd><a href="#">Колбаса</a>, <a href="#">Паштет</a>, <a href="#">Сыровяленое мясо</a>, <a href="#">Тушёнка</a></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="nav-hits-product">
+                                            <div class="nav-hits-product-photo">
+                                                <a href="#">
+                                                    <img src="files/submenu.jpg" alt="" />
+                                                    <div class="icons icons-2">
+                                                        <div class="icon-new"></div>
+                                                        <div class="icon-discount"></div>
+                                                        <div class="icon-hit"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="nav-hits-product-info">
+                                                <div class="nav-hits-product-title"><a href="#">Колбаса с/в "Сальчичон Экстра" Casademont</a></div>
+                                                <div class="nav-hits-product-price">от 260 &#8381;</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#"><span>Масло, мед, бакалея</span></a></li>
+                            <li><a href="#"><span>Аксессуары</span></a></li>
+                        </ul>
+                    </nav>
+
+                    <form action="#" method="post" class="top-search">
+                        <a href="#" class="top-search-mobile-link"></a>
+                        <div class="top-search-input"><input type="text" name="search" value="" placeholder="Поиск товаров" /></div>
+                        <div class="top-search-submit"><input type="submit" value="" /></div>
+                    </form>
+
+                </div>
+                <!-- top END -->
+
+                <!-- content -->
+                <div class="content">
+                    <div class="breadcrumbs">
+                        <a href="#">Главная</a> <span></span>
+                        Результат поиска
+                    </div>
+
+                    <h1>Результаты поиска</h1>
+
+                    <!-- form search -->
+                    <div class="form-search">
+                        <form action="#" method="post">
+                            <div class="form-input"><input type="text" name="search" value="Сыр" /><a href="#" class="form-input-clear"></a></div>
+                            <div class="form-submit"><input type="submit" value="искать" /></div>
+                        </form>
+                    </div>
+                    <!-- form search END -->
+
+                    <div class="form-search-title">По запросу «<strong>Сыр</strong>» найдено 6 соответствий</div>
+
+                    <!-- catalogue list -->
+                    <div class="catalogue-list catalogue-list-wide">
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-1.jpg" alt="" />
+                                    <div class="icons icons-2">
+                                        <div class="icon-new"></div>
+                                        <div class="icon-discount"></div>
+                                        <div class="icon-hit"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр Латтерия Лефкадии</a></div>
+                                <div class="catalogue-item-weight">фасовка от 200 до 400 грамм</div>
+                                <div class="catalogue-item-text">Полутвердый выдержанный сыр, изготовленный по традиционной итальянской рецептуре из коровьего молока.</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">320 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-2.jpg" alt="" />
+                                    <div class="icons icons-2">
+                                        <div class="icon-hit"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр Камамбер Лефкадии</a></div>
+                                <div class="catalogue-item-weight">150 грамм</div>
+                                <div class="catalogue-item-text">Мягкий сливочный сыр, созданный и выдержанный по классической французской рецептуре из цельного коровьего молока.</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">99 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-3.jpg" alt="" />
+                                    <div class="icons icons-2">
+                                        <div class="icon-new"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр Скаморца Лефкадии</a></div>
+                                <div class="catalogue-item-weight">250 грамм</div>
+                                <div class="catalogue-item-text">Полутвердый сыр из коровьего молока оригинальной грушевидной формы. Очень похож по форме, структуре и вкусу на моцареллу...</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">380 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-6.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр Голд Блю с голубой плесенью</a></div>
+                                <div class="catalogue-item-weight">2 кг</div>
+                                <div class="catalogue-item-text">Сыр Голд Блю с голубой плесенью (Gold Blue con la muffa blu)  - 2 кг</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">4 140 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-4.jpg" alt="" />
+                                    <div class="icons icons-2">
+                                        <div class="icon-discount"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр Латтерия Лефкадии</a></div>
+                                <div class="catalogue-item-weight">фасовка от 200 до 400 грамм</div>
+                                <div class="catalogue-item-text">Полутвердый выдержанный сыр, изготовленный по традиционной итальянской рецептуре из коровьего молока.</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">320 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-5.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр козий Бюш Лефкадии</a></div>
+                                <div class="catalogue-item-weight">фасовка 180-300 грамм</div>
+                                <div class="catalogue-item-text">Мягкий сливочный сыр, созданный и выдержанный по классической французской рецептуре из цельного коровьего молока.</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">1 430 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                    </div>
+                    <!-- catalogue list END -->
+
+                    <hr />
+
+                    <h2>Вы смотрели</h2>
+
+                    <!-- catalogue list -->
+                    <div class="catalogue-list catalogue-list-wide">
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-4.jpg" alt="" />
+                                    <div class="icons icons-2">
+                                        <div class="icon-discount"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр Латтерия Лефкадии</a></div>
+                                <div class="catalogue-item-weight">фасовка от 200 до 400 грамм</div>
+                                <div class="catalogue-item-text">Полутвердый выдержанный сыр, изготовленный по традиционной итальянской рецептуре из коровьего молока.</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">320 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-5.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр козий Бюш Лефкадии</a></div>
+                                <div class="catalogue-item-weight">фасовка 180-300 грамм</div>
+                                <div class="catalogue-item-text">Мягкий сливочный сыр, созданный и выдержанный по классической французской рецептуре из цельного коровьего молока.</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">1 430 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                        <!-- catalogue item -->
+                        <div class="catalogue-item">
+                            <div class="catalogue-item-photo">
+                                <a href="#">
+                                    <img src="files/catalogue-6.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="catalogue-item-wrap">
+                                <div class="catalogue-item-name"><a href="#">Сыр Голд Блю с голубой плесенью</a></div>
+                                <div class="catalogue-item-weight">2 кг</div>
+                                <div class="catalogue-item-text">Сыр Голд Блю с голубой плесенью (Gold Blue con la muffa blu)  - 2 кг</div>
+                            </div>
+                            <div class="catalogue-item-ctrl">
+                                <div class="catalogue-item-price">4 140 &#8381;</div>
+                                <div class="catalogue-item-buy"><a href="#">в корзину</a></div>
+                            </div>
+                        </div>
+                        <!-- catalogue item END -->
+
+                    </div>
+                    <!-- catalogue list END -->
+
+                </div>
+                <!-- content END -->
+
+                <!-- subscribe -->
+                <div class="subscribe">
+                    <div class="subscribe-inner">
+                        <div class="subscribe-info">
+                            <div class="subscribe-title">Подпишитесь на нашу рассылку</div>
+                            <div class="subscribe-text">и будьте в курсе всех событий, акций и обновлений</div>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#" method="post">
+                                <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш email" /></div>
+                                <div class="form-submit"><input type="submit" value="Подписаться" /></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- subscribe END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-inner">
+
+                <div class="footer-nav">
+
+                    <div class="footer-menu">
+                        <div class="footer-title">Продукция</div>
+                        <ul>
+                            <li><a href="#">Сыр</a></li>
+                            <li><a href="#">Вино</a></li>
+                            <li><a href="#">Мясные деликатесы</a></li>
+                            <li><a href="#">Масло, мед, бакалея</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu">
+                        <div class="footer-title">Информация</div>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Поставщикам</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="copyrights">© ТД Николаевский, 2016</div>
+                </div>
+
+                <div class="footer-content">
+                    <div class="footer-title">Контакты</div>
+                    <p><strong>8 (499) 322-70-80</strong><br />Режим работы с 10-00 до 18-00 часов, кроме выходных.</p>
+                    <p>г.Москва, Большой Харитоньевский пер., дом 14.</p>
+                    <div class="social">
+                        <a href="#" class="social-1"></a>
+                        <a href="#" class="social-2"></a>
+                        <a href="#" class="social-3"></a>
+                        <a href="#" class="social-4"></a>
+                        <a href="#" class="social-5"></a>
+                    </div>
+                    <div class="copyrights-mobile">© ТД Николаевский, 2016</div>
+                    <div class="developer"><span>Создание и сопровождение</span> <a href="#">Bilingo Digital Agency</a></div>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

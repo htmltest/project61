@@ -1,0 +1,259 @@
+<div class="shops">
+
+    <!-- shops header -->
+    <div class="shops-header">
+        <h2>Купить в магазинах</h2>
+        <a href="#" class="shops-close">Закрыть</a>
+
+        <!-- shops ctrl -->
+        <div class="shops-ctrl">
+            <div class="shops-region">
+                <div class="shops-region-value">Москва</div>
+                <ul>
+                    <li class="active"><a href="#" data-region="1">Москва</a></li>
+                    <li><a href="#" data-region="2">Московская область</a></li>
+                </ul>
+            </div>
+
+            <div class="shops-views">
+                <div class="shops-views-value">На карте</div>
+                <ul>
+                    <li><a href="#" data-view="1">Списком</a></li>
+                    <li class="active"><a href="#" data-view="2">На карте</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- shops ctrl END -->
+    </div>
+    <!-- shops header END -->
+
+    <!-- shops container -->
+    <div class="shops-container">
+
+        <!-- shops content -->
+        <div class="shops-content active" data-region="1" data-view="2">
+            <div class="shops-map" id="map1"></div>
+            <div class="shops-map-list">
+                <div class="shops-map-item">
+                    <div class="shops-map-item-name">Вайн & Бир</div>
+                    <div class="shops-map-item-address">Москва, Шипиловский пр., 39</div>
+                    <div class="shops-map-item-phone">+7 921 123-123-54</div>
+                </div>
+                <div class="shops-map-item">
+                    <div class="shops-map-item-name">Вайн & Бир</div>
+                    <div class="shops-map-item-address">Москва, ул. Миклухо-Маклая, 55</div>
+                    <div class="shops-map-item-phone">+7 921 123-123-54</div>
+                </div>
+                <div class="shops-map-item">
+                    <div class="shops-map-item-name">Blanc de Blancs</div>
+                    <div class="shops-map-item-address">Москва, Воротынская ул., 16</div>
+                    <div class="shops-map-item-phone">+7 921 123-123-54</div>
+                </div>
+            </div>
+        </div>
+        <!-- shops content END -->
+
+        <!-- shops content -->
+        <div class="shops-content" data-region="2" data-view="2">
+            <div class="shops-map" id="map2"></div>
+            <div class="shops-map-list">
+                <div class="shops-map-item">
+                    <div class="shops-map-item-name">Blanc de Blancs</div>
+                    <div class="shops-map-item-address">п. Монино ул. Маршала Красовского, д. 2А</div>
+                    <div class="shops-map-item-phone">+7 921 123-123-54</div>
+                </div>
+                <div class="shops-map-item">
+                    <div class="shops-map-item-name">Рось</div>
+                    <div class="shops-map-item-address">Щелково, ул. Заречная, д. 5А</div>
+                    <div class="shops-map-item-phone">+7 921 123-123-54</div>
+                </div>
+                <div class="shops-map-item">
+                    <div class="shops-map-item-name">Рось</div>
+                    <div class="shops-map-item-address">Щелково, Пролетарский пр-т, д. 4 к. 3</div>
+                    <div class="shops-map-item-phone">+7 921 123-123-54</div>
+                </div>
+            </div>
+        </div>
+        <!-- shops content END -->
+
+        <!-- shops content -->
+        <div class="shops-content" data-region="1" data-view="1">
+            <div class="shops-list">
+                <div class="shops-list-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Название</th>
+                                <th class="no-mobile">Адрес</th>
+                                <th class="no-mobile">Метро</th>
+                                <th class="no-mobile">Телефон</th>
+                                <th class="on-mobile">Адрес / Метро / Телефон</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Вайн & Бир</td>
+                                <td class="no-mobile">Шипиловский пр., 39</td>
+                                <td class="no-mobile">Комсомольская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Шипиловский пр., 39<br />Комсомольская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Вайн & Бир</td>
+                                <td class="no-mobile">ул. Миклухо-Маклая, 55</td>
+                                <td class="no-mobile">Чкаловская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">ул. Миклухо-Маклая, 55<br />Чкаловская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">пр-т Маршала Жукова, 59</td>
+                                <td class="no-mobile">Теплый стан</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">пр-т Маршала Жукова, 59<br />Теплый стан<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Мичуринский пр-т, д. 16</td>
+                                <td class="no-mobile">Автозаводская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Мичуринский пр-т, д. 16<br />Автозаводская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Воротынская ул., 16</td>
+                                <td class="no-mobile">ВДНХ</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Воротынская ул., 16<br />ВДНХ<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Пятницкое ш., 7 км, влад. 2</td>
+                                <td class="no-mobile">Сухаревская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Пятницкое ш., 7 км, влад. 2<br />Сухаревская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">п. Монино ул. Маршала Красовского, д. 2А</td>
+                                <td class="no-mobile">Теплый стан</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">п. Монино ул. Маршала Красовского, д. 2А<br />Теплый стан<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Балашиха, ул. Кольцевая, д. 3, корп. 2</td>
+                                <td class="no-mobile">Автозаводская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Балашиха, ул. Кольцевая, д. 3, корп. 2<br />Автозаводская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Рось</td>
+                                <td class="no-mobile">Щелково, ул. Заречная, д. 5А</td>
+                                <td class="no-mobile">ВДНХ</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Щелково, ул. Заречная, д. 5А<br />ВДНХ<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Рось</td>
+                                <td class="no-mobile">Щелково, ул. Первомайская, д. 43</td>
+                                <td class="no-mobile">Сухаревская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Щелково, ул. Первомайская, д. 43<br />Сухаревская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Рось</td>
+                                <td class="no-mobile">Щелково, Пролетарский пр-т, д. 4 к. 3</td>
+                                <td class="no-mobile">Автозаводская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Щелково, Пролетарский пр-т, д. 4 к. 3<br />Автозаводская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Рось</td>
+                                <td class="no-mobile">Щелково, ул. Заречная, д. 5А</td>
+                                <td class="no-mobile">&nbsp;</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Щелково, ул. Заречная, д. 5А<br />+7 921 123-123-54</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- shops content END -->
+
+        <!-- shops content -->
+        <div class="shops-content" data-region="2" data-view="1">
+            <div class="shops-list">
+                <div class="shops-list-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Название</th>
+                                <th class="no-mobile">Адрес</th>
+                                <th class="no-mobile">Метро</th>
+                                <th class="no-mobile">Телефон</th>
+                                <th class="on-mobile">Адрес / Метро / Телефон</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">пр-т Маршала Жукова, 59</td>
+                                <td class="no-mobile">Теплый стан</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">пр-т Маршала Жукова, 59<br />Теплый стан<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Мичуринский пр-т, д. 16</td>
+                                <td class="no-mobile">Автозаводская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Мичуринский пр-т, д. 16<br />Автозаводская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Воротынская ул., 16</td>
+                                <td class="no-mobile">ВДНХ</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Воротынская ул., 16<br />ВДНХ<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Пятницкое ш., 7 км, влад. 2</td>
+                                <td class="no-mobile">Сухаревская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Пятницкое ш., 7 км, влад. 2<br />Сухаревская<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">п. Монино ул. Маршала Красовского, д. 2А</td>
+                                <td class="no-mobile">Теплый стан</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">п. Монино ул. Маршала Красовского, д. 2А<br />Теплый стан<br />+7 921 123-123-54</td>
+                            </tr>
+                            <tr>
+                                <td>Blanc de Blancs</td>
+                                <td class="no-mobile">Балашиха, ул. Кольцевая, д. 3, корп. 2</td>
+                                <td class="no-mobile">Автозаводская</td>
+                                <td class="no-mobile">+7 921 123-123-54</td>
+                                <td class="on-mobile">Балашиха, ул. Кольцевая, д. 3, корп. 2<br />Автозаводская<br />+7 921 123-123-54</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- shops content END -->
+
+    </div>
+    <!-- shops container END -->
+
+</div>
