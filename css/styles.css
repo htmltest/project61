@@ -1358,3 +1358,15 @@ footer {height:360px; margin:-360px 0 0 0; background:#f7f7f7; position:relative
     .warning-rules-link {float:none; padding:0 0 0 58px; font-size:14px}
     .warning .form-submit input {padding-left:0; padding-right:0; width:100%}
 }
+
+.window-basket {width:750px; padding:0 49px 34px 49px}
+.window-basket h2 {margin-top:41px}
+.window-basket form {margin:0}
+.window-basket .basket-row-count .form-input input {height:40px; padding:6px 25px 7px 16px}
+.window-basket .basket-row-summ {width:1%; white-space:nowrap}
+.window-basket .ui-spinner-up {background-position:left -3px}
+.window-basket .ui-spinner-down {bottom:3px}
+.window-basket .form-submit input {background:#108e3b; border-color:#108e3b}
+.window-basket .form-submit input:hover {background:#0f672d}
+.window-basket-close {float:right; margin:0 30px 0 0; width:261px; height:48px; border:1px solid #87b396; color:#000; text-align:center; text-transform:uppercase; font:16px/48px "PT Serif", serif; text-decoration:none}
+.window-basket-close:hover {border-color:#e7f0ea; background:#e7f0ea}

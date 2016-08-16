@@ -438,6 +438,50 @@ var sliderTimer     = null;
             }
         });
 
+        $('.detail-order form').submit(function(e) {
+            $.ajax({
+                type: 'POST',
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                dataType: 'html',
+                cache: false
+            }).done(function(html) {
+                if ($('.window').length > 0) {
+                    windowClose();
+                }
+                windowOpen(html);
+                $('.window .basket-row-count input').on('spinchange spinstop', function(event, ui) {
+                    var curRow = $(this).parents().filter('.basket-row');
+                    curRow.find('.basket-row-summ span').html(String(Number(curRow.find('.basket-row-price span').html().replace(' ', '')) * $(this).val()).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+                });
+            });
+            e.preventDefault();
+        });
+
+        $('.recommend-item-buy a, .catalogue-item-buy a').click(function(e) {
+            $.ajax({
+                type: 'POST',
+                url: $(this).attr('href'),
+                dataType: 'html',
+                cache: false
+            }).done(function(html) {
+                if ($('.window').length > 0) {
+                    windowClose();
+                }
+                windowOpen(html);
+                $('.window .basket-row-count input').on('spinchange spinstop', function(event, ui) {
+                    var curRow = $(this).parents().filter('.basket-row');
+                    curRow.find('.basket-row-summ span').html(String(Number(curRow.find('.basket-row-price span').html().replace(' ', '')) * $(this).val()).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+                });
+            });
+            e.preventDefault();
+        });
+
+        $('body').on('click', '.window-basket-close', function(e) {
+            windowClose();
+            e.preventDefault();
+        });
+
     });
 
     $(window).resize(function() {
