@@ -1370,3 +1370,10 @@ footer {height:360px; margin:-360px 0 0 0; background:#f7f7f7; position:relative
 .window-basket .form-submit input:hover {background:#0f672d}
 .window-basket-close {float:right; margin:0 30px 0 0; width:261px; height:48px; border:1px solid #87b396; color:#000; text-align:center; text-transform:uppercase; font:16px/48px "PT Serif", serif; text-decoration:none}
 .window-basket-close:hover {border-color:#e7f0ea; background:#e7f0ea}
+
+@media (max-width:1169px) {
+    .window-basket {width:390px; padding:0 29px 54px 29px}
+    .window-basket .basket-ctrl {padding:32px 0 0 0}
+    .window-basket .basket-ctrl .form-submit {width:100%}
+    .window-basket-close {float:none; display:block; margin:10px 0 0 0; width:auto}
+}
