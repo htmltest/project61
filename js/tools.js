@@ -130,12 +130,6 @@ var sliderTimer     = null;
             e.preventDefault();
         });
 
-        $('.basket-row-count input').on('spinchange spinstop', function(event, ui) {
-            var curRow = $(this).parents().filter('.basket-row');
-            curRow.find('.basket-row-summ span').html(String(Number(curRow.find('.basket-row-price span').html().replace(' ', '')) * $(this).val()).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-            recalcBasket();
-        });
-
         $('.basket-delete a').click(function(e) {
             var curRow = $(this).parents().filter('.basket-row');
             curRow.remove();
@@ -450,10 +444,6 @@ var sliderTimer     = null;
                     windowClose();
                 }
                 windowOpen(html);
-                $('.window .basket-row-count input').on('spinchange spinstop', function(event, ui) {
-                    var curRow = $(this).parents().filter('.basket-row');
-                    curRow.find('.basket-row-summ span').html(String(Number(curRow.find('.basket-row-price span').html().replace(' ', '')) * $(this).val()).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-                });
             });
             e.preventDefault();
         });
@@ -469,10 +459,6 @@ var sliderTimer     = null;
                     windowClose();
                 }
                 windowOpen(html);
-                $('.window .basket-row-count input').on('spinchange spinstop', function(event, ui) {
-                    var curRow = $(this).parents().filter('.basket-row');
-                    curRow.find('.basket-row-summ span').html(String(Number(curRow.find('.basket-row-price span').html().replace(' ', '')) * $(this).val()).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-                });
             });
             e.preventDefault();
         });
