@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="js/nouislider/nouislider.tooltips.css" />
         <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.css" />
         <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
 
         <script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/chosen/chosen.jquery.min.js"></script>
@@ -23,6 +24,7 @@
         <script src="js/jscrollpane/jquery.mousewheel.js"></script>
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
         <script src="js/jquery.cookie.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=device-width" />
@@ -150,14 +152,19 @@
 
                         <!-- detail photo -->
                         <div class="detail-photo">
-                            <div class="detail-photo-big"><img src="files/detail-big.jpg" alt="" /></div>
+                            <div class="detail-photo-big">
+                                <img src="files/detail-big.jpg" alt="" />
+                                <a href="files/detail-big.jpg" class="detail-photo-zoom"></a>
+                                <a href="#" class="detail-photo-prev"></a>
+                                <a href="#" class="detail-photo-next"></a>
+                            </div>
                             <div class="detail-photo-preview">
                                 <ul>
-                                    <li class="active"><a href="files/detail-big.jpg"><img src="files/detail-preview-1.jpg" alt="" /></a></li>
-                                    <li><a href="files/detail-preview-2.jpg"><img src="files/detail-preview-2.jpg" alt="" /></a></li>
-                                    <li><a href="files/detail-preview-3.jpg"><img src="files/detail-preview-3.jpg" alt="" /></a></li>
-                                    <li><a href="files/detail-preview-4.jpg"><img src="files/detail-preview-4.jpg" alt="" /></a></li>
-                                    <li><a href="files/detail-preview-5.jpg"><img src="files/detail-preview-5.jpg" alt="" /></a></li>
+                                    <li class="active"><a href="files/detail-big.jpg" data-max="files/detail-big.jpg"><img src="files/detail-preview-1.jpg" alt="" /></a></li>
+                                    <li><a href="files/detail-preview-2.jpg" data-max="files/detail-preview-2.jpg"><img src="files/detail-preview-2.jpg" alt="" /></a></li>
+                                    <li><a href="files/detail-preview-3.jpg" data-max="files/detail-preview-3.jpg"><img src="files/detail-preview-3.jpg" alt="" /></a></li>
+                                    <li><a href="files/detail-preview-4.jpg" data-max="files/detail-preview-4.jpg"><img src="files/detail-preview-4.jpg" alt="" /></a></li>
+                                    <li><a href="files/detail-preview-5.jpg" data-max="files/detail-preview-5.jpg"><img src="files/detail-preview-5.jpg" alt="" /></a></li>
                                 </ul>
                             </div>
 
@@ -233,9 +240,9 @@
                             </table>
 
                             <div class="detail-descr">
-                                <p>Мягкий сливочный сыр, созданный и выдержанный по классической французской рецептуре из цельного коровьего молока. Кремообразное мягкое сырное тесто с деликатным трюфельным привкусом покрывает бархатистая корочка благородной белой плесени.</p>
-                                <p>Камамбер Лефкадии обладает легким ароматом лесных грибов в сочетании с изящной ореховой ноткой и легкими пряными тонами. Насыщенный вкус с продолжительным послевкусием создает идеальное сочетание с яблоками, багетом, крекерами и красным вином. Этот изысканный сыр с богатой историей имеет поистине королевское достоинство!</p>
-                                <p>Камамбер Лефкадии завоевал золотую медаль в номинации «Молочная продукция» на профессиональном дегустационном конкурсе «Продукт года 2015» в рамках международной выставки WorldFood Moscow.</p>
+                                Мягкий сливочный сыр, созданный и выдержанный по классической французской рецептуре из цельного коровьего молока. Кремообразное мягкое сырное тесто с деликатным трюфельным привкусом покрывает бархатистая корочка благородной белой плесени.
+                                Камамбер Лефкадии обладает легким ароматом лесных грибов в сочетании с изящной ореховой ноткой и легкими пряными тонами. Насыщенный вкус с продолжительным послевкусием создает идеальное сочетание с яблоками, багетом, крекерами и красным вином. Этот изысканный сыр с богатой историей имеет поистине королевское достоинство!
+                                Камамбер Лефкадии завоевал золотую медаль в номинации «Молочная продукция» на профессиональном дегустационном конкурсе «Продукт года 2015» в рамках международной выставки WorldFood Moscow.</p>
                             </div>
 
                             <div class="detail-notice">
@@ -594,7 +601,7 @@
                             <div class="subscribe-text">и будьте в курсе всех событий, акций и обновлений</div>
                         </div>
                         <div class="subscribe-form">
-                            <form action="#" method="post">
+                            <form action="windows/subscribe.html" method="post">
                                 <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш email" /></div>
                                 <div class="form-submit"><input type="submit" value="Подписаться" /></div>
                             </form>
