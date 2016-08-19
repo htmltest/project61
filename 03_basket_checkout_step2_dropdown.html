@@ -175,7 +175,7 @@
                                 <div id="bx-soa-total-mobile" style="margin-bottom: 6px;"></div>
 
                                 <!-- BASKET ITEMS BLOCK -->
-                                <div id="bx-soa-basket" data-visited="true" class="bx-soa-section bx-active bx-selected">
+                                <div id="bx-soa-basket" data-visited="true" class="bx-soa-section bx-active bx-step-completed">
                                     <div class="bx-soa-section-title-container">
                                         <h2 class="bx-soa-section-title col-sm-9">
                                             <span class="bx-soa-section-title-count"></span>
@@ -244,14 +244,11 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="row bx-soa-more"><div class="bx-soa-more-btn col-xs-12"><a href="" class="pull-right btn btn-default btn-md">Далее</a></div></div>
-
                                     </div>
                                 </div>
 
                                 <!-- REGION BLOCK -->
-                                <div id="bx-soa-region" data-visited="false" class="bx-soa-section bx-active">
+                                <div id="bx-soa-region" data-visited="false" class="bx-soa-section bx-active bx-selected">
                                     <div class="bx-soa-section-title-container">
                                         <h2 class="bx-soa-section-title col-sm-9">
                                             <span class="bx-soa-section-title-count"></span>
@@ -259,7 +256,53 @@
                                         </h2>
                                         <div class="col-xs-12 col-sm-3 text-right"><a href="" class="bx-soa-editstep">изменить</a></div>
                                     </div>
-                                    <div class="bx-soa-section-content container-fluid"></div>
+                                    <div class="bx-soa-section-content container-fluid">
+                                        <div class="bx_soa_location row">
+                                            <div class="col-xs-12">
+                                                <input type="hidden" name="PERSON_TYPE" value="1">
+                                                <div data-property-id-row="6" class="form-group bx-soa-location-input-container has-error">
+                                                    <label for="soa-property-6" class="bx-soa-custom-label"><span class="bx-authform-starrequired">*</span> Местоположение</label>
+                                                    <div id="tooltip-soa-property-6" class="bx-soa-tooltip bx-soa-tooltip-static bx-soa-tooltip-danger tooltip top" data-state="opened" style="opacity: 1; display: block;">
+                                                        <div class="tooltip-arrow"></div>
+                                                        <div class="tooltip-inner">Поле обязательно для заполнения</div>
+                                                    </div>
+                                                    <div class="bx-sls " id="sls-99595">
+                                                        <div class="dropdown-block bx-ui-sls-input-block form-control">
+                                                            <span class="dropdown-icon"></span>
+                                                            <input type="text" placeholder="Введите название ..." class="dropdown-field" value="0000073738" name="ORDER_PROP_6" autocomplete="off" style="display: none;">
+                                                            <div style="margin: 0px; padding: 0px; border: medium none; position: relative;" class="bx-ui-sls-container">
+                                                                <input type="text" disabled="disabled" autocomplete="off" class="bx-ui-sls-route" style="padding: 0px; margin: 0px;">
+                                                                <input type="text" placeholder="Введите название ..." class="bx-ui-sls-fake" value="Мос" autocomplete="off" title="">
+                                                            </div>
+                                                            <div class="dropdown-fade2white"></div>
+                                                            <div class="bx-ui-sls-loader"></div>
+                                                            <div title="Отменить выбор" class="bx-ui-sls-clear" style="display: none;"></div>
+                                                            <div class="bx-ui-sls-pane" style="overflow-y: auto; overflow-x: hidden; display: block; bottom: auto;">
+                                                                <div class="bx-ui-sls-variants">
+                                                                    <div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text"><span>Мос</span>альск, Мосальский район, Калужская область, Центр, Россия</span></div>
+                                                                    <div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text"><span>Мос</span>ква, Московская область, Центр, Россия</span></div>
+                                                                    <div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text"><span>Мос</span>ковский, Москва, Московская область, Центр, Россия</span></div>
+                                                                    <div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text"><span>Мос</span>альский район, Калужская область, Центр, Россия</span></div>
+                                                                    <div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text"><span>Мос</span>каленский район, Омская область, Сибирь, Россия</span></div>
+                                                                    <div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text"><span>Мос</span>товский район, Краснодарский край, Юг, Россия</span></div>
+                                                                    <div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text"><span>Мос</span>ковская область, Центр, Россия</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bx-ui-sls-error-message" style="display: none;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group bx-soa-location-input-container" data-property-id-row="4">
+                                                    <label for="zipProperty" class="bx-soa-custom-label"><span class="bx-authform-starrequired">*</span> Индекс</label>
+                                                    <input type="text" id="zipProperty" placeholder="" autocomplete="zip" class="form-control bx-soa-customer-input bx-ios-fix" name="ORDER_PROP_4">
+                                                </div>
+                                                <div class="bx-soa-reference">Выберите свой городе в списке. Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bx-soa-more"><div class="bx-soa-more-btn col-xs-12"><a href="" class="pull-left btn btn-default btn-md">Назад</a><a href="" class="pull-right btn btn-default btn-md">Далее</a></div></div>
+                                    </div>
                                 </div>
 
                                 <!-- DELIVERY BLOCK -->
