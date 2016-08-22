@@ -707,6 +707,70 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
     .open-filter .catalogue-side:after {content:""; display:block; width:100%; height:9999px; position:absolute; left:0; top:100%; background:#fff; z-index:98}
 }
 
+.bx-filter {font-size:14px; margin-top:-6px}
+.bx-filter-title {display:none}
+.bx-filter-parameters-box-title {padding:35px 0 10px 0; font:20px/25px "PT Serif", serif; color:#231f20}
+.bx-filter-parameters-box {position:relative}
+.bx-filter .checkbox:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.bx-filter .checkbox label {float:left; margin:5px 0 0 0; cursor:pointer; position:relative; padding:0 0 0 35px}
+.bx-filter .checkbox label:hover {color:#0f672d}
+.bx-filter .checkbox input {display:none}
+.bx-filter-param-text {display:block; position:relative}
+.bx-filter-param-text:before {content:""; display:block; position:absolute; left:-35px; top:4px; width:17px; height:17px; border:1px solid #231f20; background:url(../images/checkbox.png) no-repeat -999px -999px}
+.bx-filter .checkbox input:checked+.bx-filter-param-text {font-weight:600}
+.bx-filter .checkbox input:checked+.bx-filter-param-text:before {background-position:center; border-color:#231f20}
+
+.bx-filter .bx-filter-popup-result.right {left:97%}
+.bx-filter .bx-filter-popup-result.right {border-image:url(../images/result_popup_right.png) 4 4 4 20 fill repeat repeat; border-width:2px 2px 2px 10px}
+.bx-filter .bx-filter-popup-result {border:1px solid #c6dce7; background:#fff; color:#3f3f3f; display:none; font-size:13px; font-weight:normal; line-height:18px; margin-left:10px; margin-top:28px; min-height:37px; padding:0 10px; position:absolute; white-space:nowrap; z-index:915}
+
+.bx-filter-parameters-box-container:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+#set_filter {float:left; width:130px; vertical-align:top; height:40px; margin:44px 0 20px 0; padding:0; outline:none; border:1px solid #87b396; background:#0f672d; -webkit-appearance:none; cursor:pointer; color:#fff; font:12px/38px "PT Serif", serif; text-transform:uppercase; border-radius:0}
+#set_filter:hover {border-color:#108e3b; background:#108e3b}
+#del_filter {float:right; width:90px; vertical-align:top; height:40px; margin:44px 0 20px 0; padding:0; outline:none; border:none; background:transparent; -webkit-appearance:none; cursor:pointer; color:#231f20; font:12px/38px "PT Serif", serif; text-transform:uppercase; border-radius:0}
+#del_filter:hover {color:#0f672d}
+
+@media (max-width:1169px) {
+    #set_filter {float:none; width:100%; font-size:16px; line-height:58px; height:60px}
+    #del_filter {float:none; width:100%; margin:0; height:60px; font-size:16px; line-height:58px}
+}
+
+@media (max-width:767px) {
+    .bx-filter {font-size:20px; margin-top:-52px}
+    .bx-filter-parameters-box-title {font-size:25px}
+    .bx-filter .bx-filter-popup-result {display:none !important}
+}
+
+.bx-ui-slider-part {display:none}
+.bx-filter-parameters-box-container-block.bx-left {float:left; width:40%}
+.bx-filter-parameters-box-container-block.bx-right {float:right; width:40%}
+.bx-filter .bx-ft-sub {display:block; font-style:normal}
+.bx-filter-input-container input  {vertical-align:top; box-sizing:border-box; margin:0; padding:6px 9px 7px 9px; outline:none; width:100%; height:40px; border:1px solid #dde0e5; -webkit-appearance:none; color:#333; font:16px/25px "Open Sans", sans-serif; border-radius:0}
+.bx-filter-input-container input:hover {border-color:#b3b3b3}
+.bx-filter-input-container input:focus {border-color:#0f672d}
+.bx-filter-input-container input::-webkit-input-placeholder {color:#333; opacity:1}
+.bx-filter-input-container input::-moz-placeholder {color:#333; opacity:1}
+.bx-filter-input-container input:-ms-input-placeholder {color:#333; opacity:1}
+
+.bx-ui-slider-track-container {float:left; width:100%; position:relative; margin:20px 0 0 0}
+.bx-ui-slider-track {height:5px; background:#e6e6e6; position:relative}
+
+.bx-filter .bx-ui-slider-pricebar-vd {background:#e6e6e6}
+.bx-filter .bx-ui-slider-pricebar-vd {z-index:60}
+.bx-filter .bx-ui-slider-pricebar-vn {background:#e6e6e6}
+.bx-filter .bx-ui-slider-pricebar-vn {z-index:70}
+.bx-filter .bx-ui-slider-pricebar-v {background:#e6e6e6}
+.bx-filter .bx-ui-slider-pricebar-v {z-index:80}
+.bx-filter .bx-ui-slider-range,
+.bx-filter .bx-ui-slider-pricebar,
+.bx-filter .bx-ui-slider-pricebar-vd,
+.bx-filter .bx-ui-slider-pricebar-vn,
+.bx-filter .bx-ui-slider-pricebar-v {bottom:0; position:absolute; top:0}
+.bx-filter .bx-ui-slider-range {z-index:90}
+.bx-ui-slider-handle {position:absolute; width:19px; height:19px; top:-7px; border-radius:10px; background:#0f672d; cursor:pointer}
+.bx-ui-slider-handle.left {margin-left:-10px}
+.bx-ui-slider-handle.right {margin-right:-10px}
+
 .catalogue-filter {font-size:14px; margin-top:-6px}
 .catalogue-filter form:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .catalogue-filter .form-label {float:none; width:auto; padding:35px 0 0 0}
@@ -1472,3 +1536,5 @@ footer {height:360px; margin:-360px 0 0 0; background:#f7f7f7; position:relative
     .subscribe-window {width:390px; padding:0 29px 44px 29px}
     .subscribe-close {width:auto}
 }
+
+#bx-soa-total-mobile {display:none}

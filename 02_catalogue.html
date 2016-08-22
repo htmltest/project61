@@ -153,53 +153,220 @@
                         <!-- catalogue side -->
                         <div class="catalogue-side">
 
-                            <!-- catalogue filter -->
-                            <div class="catalogue-filter">
-                                <form action="#" method="post">
-                                    <div class="form-label">Категории</div>
-                                    <div class="form-checkboxes">
-                                        <div class="form-checkbox"><span><input type="checkbox" name="category1" /></span>Камамбер</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="category2" /></span>Латтерия</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="category3" /></span>Грюйер</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="category4" checked="checked" /></span>Голд блю</div>
-                                        <div class="form-checkbox-all"><a href="#">Выбрать все</a></div>
-                                    </div>
+                            <!-- bx filter -->
+                            <div class="bx-filter bx-green ">
+                                <div class="bx-filter-section container-fluid">
+                                    <div class="row"><div class="col-lg-12 bx-filter-title">Подбор параметров</div></div>
+                                    <form class="smartfilter" method="get" action="/catalog/shoes/index.php" name="_form">
+                                                    <input type="hidden" value="Y" id="bitrix_include_areas" name="bitrix_include_areas">
+                                                    <div class="row">
+                                                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                                                        <span class="bx-filter-container-modef"></span>
+                                                        <div onclick="smartFilter.hideFilterProps(this)" class="bx-filter-parameters-box-title"><span>Розничная цена <i class="fa fa-angle-down" data-role="prop_angle"></i></span></div>
+                                                        <div data-role="bx_filter_block" class="bx-filter-block">
+                                                            <div class="row bx-filter-parameters-box-container">
+                                                                <div class="col-xs-6 bx-filter-parameters-box-container-block bx-left">
+                                                                    <i class="bx-ft-sub">От</i>
+                                                                    <div class="bx-filter-input-container">
+                                                                        <input type="text" onkeyup="smartFilter.keyup(this)" size="5" value="899" id="arrFilter_P1_MIN" name="arrFilter_P1_MIN" class="min-price">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-6 bx-filter-parameters-box-container-block bx-right">
+                                                                    <i class="bx-ft-sub">До</i>
+                                                                    <div class="bx-filter-input-container">
+                                                                        <input type="text" onkeyup="smartFilter.keyup(this)" size="5" value="2999" id="arrFilter_P1_MAX" name="arrFilter_P1_MAX" class="max-price">
+                                                                    </div>
+                                                                </div>
 
-                                    <div class="form-label">Производитель</div>
-                                    <div class="form-checkboxes">
-                                        <div class="form-checkbox"><span><input type="checkbox" name="manufacturer1" /></span>Emmi</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="manufacturer2" /></span>Аргентина</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="manufacturer3" /></span>Лефкадия</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="manufacturer4" checked="checked" /></span>Николаев и Сыновья</div>
-                                        <div class="form-checkbox-all"><a href="#">Выбрать все</a></div>
-                                    </div>
+                                                                <div class="col-xs-10 col-xs-offset-1 bx-ui-slider-track-container">
+                                                                    <div id="drag_track_c4ca4238a0b923820dcc509a6f75849b" class="bx-ui-slider-track">
+                                                                                                                    <div class="bx-ui-slider-part p1"><span>899</span></div>
+                                                                        <div class="bx-ui-slider-part p2"><span>1424</span></div>
+                                                                        <div class="bx-ui-slider-part p3"><span>1949</span></div>
+                                                                        <div class="bx-ui-slider-part p4"><span>2474</span></div>
+                                                                        <div class="bx-ui-slider-part p5"><span>2999</span></div>
 
-                                    <div class="form-label">Регион</div>
-                                    <div class="form-checkboxes">
-                                        <div class="form-checkbox"><span><input type="checkbox" name="region1" /></span>Аргентина</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="region2" /></span>Россия</div>
-                                        <div class="form-checkbox"><span><input type="checkbox" name="region3" /></span>Швейцария</div>
-                                        <div class="form-checkbox-all"><a href="#">Выбрать все</a></div>
-                                    </div>
+                                                                        <div id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b" style="left: 4.54545%; right: 32.9545%;" class="bx-ui-slider-pricebar-vd"></div>
+                                                                        <div id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b" style="left: 0%; right: 0%;" class="bx-ui-slider-pricebar-vn"></div>
+                                                                        <div id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b" style="left: 4.54545%; right: 32.9545%;" class="bx-ui-slider-pricebar-v"></div>
+                                                                        <div style="left: 0%; right: 0%;" id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b" class="bx-ui-slider-range">
+                                                                            <a id="left_slider_c4ca4238a0b923820dcc509a6f75849b" href="javascript:void(0)" style="left: 4.54545%;" class="bx-ui-slider-handle left"></a>
+                                                                            <a id="right_slider_c4ca4238a0b923820dcc509a6f75849b" href="javascript:void(0)" style="right: 32.9545%;" class="bx-ui-slider-handle right"></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                                            <script type="text/javascript">
+                                                        BX.ready(function(){
+                                                            window['trackBarc4ca4238a0b923820dcc509a6f75849b'] = new BX.Iblock.SmartFilter({'leftSlider':'left_slider_c4ca4238a0b923820dcc509a6f75849b','rightSlider':'right_slider_c4ca4238a0b923820dcc509a6f75849b','tracker':'drag_tracker_c4ca4238a0b923820dcc509a6f75849b','trackerWrap':'drag_track_c4ca4238a0b923820dcc509a6f75849b','minInputId':'arrFilter_P1_MIN','maxInputId':'arrFilter_P1_MAX','minPrice':'899','maxPrice':'2999','curMinPrice':'','curMaxPrice':'','fltMinPrice':'899','fltMaxPrice':'2999','precision':'0','colorUnavailableActive':'colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b','colorAvailableActive':'colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b','colorAvailableInactive':'colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b'});
+                                                        });
+                                                    </script>
+                                                                    <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                                                    <span class="bx-filter-container-modef"></span>
+                                                    <div onclick="smartFilter.hideFilterProps(this)" class="bx-filter-parameters-box-title">
+                                                        <span class="bx-filter-parameters-box-hint">Производитель																<i class="fa fa-angle-up" data-role="prop_angle"></i>
+                                                        </span>
+                                                    </div>
 
-                                    <div class="form-label">Розничная цена, руб.</div>
+                                                    <div data-role="bx_filter_block" class="bx-filter-block" style="display: block; opacity: 1; height: 100px;">
+                                                        <div class="bx-filter-parameters-box-container">
+                                                                                                                                    <div class="checkbox">
+                                                                        <label for="arrFilter_10_1007824416" class="bx-filter-param-label " data-role="label_arrFilter_10_1007824416">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_10_1007824416" name="arrFilter_10_1007824416" value="Y">
+                                                                                <span title="Китай &quot;Гун Джой Ли&quot;" class="bx-filter-param-text">Китай "Гун Джой Ли"&nbsp;(<span data-role="count_arrFilter_10_1007824416">2</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_10_197427738" class="bx-filter-param-label " data-role="label_arrFilter_10_197427738">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_10_197427738" name="arrFilter_10_197427738" value="Y">
+                                                                                <span title="Россия &quot;Молодая семья&quot;" class="bx-filter-param-text">Россия "Молодая семья"&nbsp;(<span data-role="count_arrFilter_10_197427738">4</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_10_632765486" class="bx-filter-param-label " data-role="label_arrFilter_10_632765486">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_10_632765486" name="arrFilter_10_632765486" value="Y">
+                                                                                <span title="Франция &quot;Айли&quot;" class="bx-filter-param-text">Франция "Айли"&nbsp;(<span data-role="count_arrFilter_10_632765486">1</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                                        </div>
+                                                        <div style="clear: both"></div>
+                                                    </div>
+                                                </div>
+                                                                <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                                                    <span class="bx-filter-container-modef"></span>
+                                                    <div onclick="smartFilter.hideFilterProps(this)" class="bx-filter-parameters-box-title">
+                                                        <span class="bx-filter-parameters-box-hint">Материал																<i class="fa fa-angle-up" data-role="prop_angle"></i>
+                                                        </span>
+                                                    </div>
 
-                                    <div class="form-slider">
-                                        <div class="form-slider-values">
-                                            <div class="form-slider-min">150</div>
-                                            <div class="form-slider-max">4500</div>
-                                            <div class="form-slider-from"><input type="text" name="priceFrom" value="150" /></div>
-                                            <div class="form-slider-to"><input type="text" name="priceTo" value="4500" /></div>
+                                                    <div data-role="bx_filter_block" class="bx-filter-block" style="display: block; opacity: 1; height: 170px;">
+                                                        <div class="bx-filter-parameters-box-container">
+                                                                                                                                    <div class="checkbox">
+                                                                        <label for="arrFilter_11_692893017" class="bx-filter-param-label " data-role="label_arrFilter_11_692893017">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_11_692893017" name="arrFilter_11_692893017" value="Y">
+                                                                                <span title="искусственные материалы" class="bx-filter-param-text">искусственные материалы&nbsp;(<span data-role="count_arrFilter_11_692893017">2</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_11_148021655" class="bx-filter-param-label " data-role="label_arrFilter_11_148021655">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_11_148021655" name="arrFilter_11_148021655" value="Y">
+                                                                                <span title="кожа" class="bx-filter-param-text">кожа&nbsp;(<span data-role="count_arrFilter_11_148021655">2</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_11_292839161" class="bx-filter-param-label " data-role="label_arrFilter_11_292839161">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_11_292839161" name="arrFilter_11_292839161" value="Y">
+                                                                                <span title="полиуретан " class="bx-filter-param-text">полиуретан &nbsp;(<span data-role="count_arrFilter_11_292839161">1</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_11_1281586227" class="bx-filter-param-label " data-role="label_arrFilter_11_1281586227">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_11_1281586227" name="arrFilter_11_1281586227" value="Y">
+                                                                                <span title="резина/кожа" class="bx-filter-param-text">резина/кожа&nbsp;(<span data-role="count_arrFilter_11_1281586227">1</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_11_740154575" class="bx-filter-param-label " data-role="label_arrFilter_11_740154575">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_11_740154575" name="arrFilter_11_740154575" value="Y">
+                                                                                <span title="текстиль/полимер" class="bx-filter-param-text">текстиль/полимер&nbsp;(<span data-role="count_arrFilter_11_740154575">1</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                                        </div>
+                                                        <div style="clear: both"></div>
+                                                    </div>
+                                                </div>
+                                                                <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                                                    <span class="bx-filter-container-modef"><div style="display: inline-block;" id="modef" class="bx-filter-popup-result right">
+                                                            Выбрано: <span id="modef_num">7</span>								<span class="arrow"></span>
+                                                            <br>
+                                                            <a target="" href="/catalog/shoes/filter/sizes_shoes-is-bcf799ba1361be1e5c3c8a38aac331d3/apply/">Показать</a>
+                                                        </div></span>
+                                                    <div onclick="smartFilter.hideFilterProps(this)" class="bx-filter-parameters-box-title">
+                                                        <span class="bx-filter-parameters-box-hint">Размеры обуви																<i class="fa fa-angle-up" data-role="prop_angle"></i>
+                                                        </span>
+                                                    </div>
+
+                                                    <div data-role="bx_filter_block" class="bx-filter-block">
+                                                        <div class="bx-filter-parameters-box-container">
+                                                                                                                                    <div class="checkbox">
+                                                                        <label for="arrFilter_34_206169288" class="bx-filter-param-label " data-role="label_arrFilter_34_206169288">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_34_206169288" name="arrFilter_34_206169288" value="Y">
+                                                                                <span title="35" class="bx-filter-param-text">35&nbsp;(<span data-role="count_arrFilter_34_206169288">7</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_34_2068763730" class="bx-filter-param-label " data-role="label_arrFilter_34_2068763730">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_34_2068763730" name="arrFilter_34_2068763730" value="Y">
+                                                                                <span title="36" class="bx-filter-param-text">36&nbsp;(<span data-role="count_arrFilter_34_2068763730">7</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_34_498629140" class="bx-filter-param-label " data-role="label_arrFilter_34_498629140">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_34_498629140" name="arrFilter_34_498629140" value="Y">
+                                                                                <span title="37" class="bx-filter-param-text">37&nbsp;(<span data-role="count_arrFilter_34_498629140">7</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_34_1790921346" class="bx-filter-param-label " data-role="label_arrFilter_34_1790921346">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_34_1790921346" name="arrFilter_34_1790921346" value="Y">
+                                                                                <span title="38" class="bx-filter-param-text">38&nbsp;(<span data-role="count_arrFilter_34_1790921346">7</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                        <div class="checkbox">
+                                                                        <label for="arrFilter_34_100641005" class="bx-filter-param-label " data-role="label_arrFilter_34_100641005">
+                                                                            <span class="bx-filter-input-checkbox">
+                                                                                <input type="checkbox" onclick="smartFilter.click(this)" id="arrFilter_34_100641005" name="arrFilter_34_100641005" value="Y">
+                                                                                <span title="39" class="bx-filter-param-text">39&nbsp;(<span data-role="count_arrFilter_34_100641005">7</span>)</span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                                                                        </div>
+                                                        <div style="clear: both"></div>
+                                                    </div>
+                                                </div>
+                                                        </div><!--//row-->
+                                        <div class="row">
+                                            <div class="col-xs-12 bx-filter-button-box">
+                                                <div class="bx-filter-block">
+                                                    <div class="bx-filter-parameters-box-container">
+                                                        <input type="button" value="Показать" name="set_filter" id="set_filter" class="btn btn-themes">
+                                                        <input type="button" value="Сбросить" name="del_filter" id="del_filter" class="btn btn-link">
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-slider-inner"></div>
-                                    </div>
-
-                                    <div class="form-submit"><input type="submit" value="Применить" /></div>
-                                    <div class="form-reset"><input type="reset" value="Сбросить" /></div>
-
-                                </form>
+                                        <div class="clb"></div>
+                                    </form>
+                                </div>
                             </div>
-                            <!-- catalogue filter END -->
+                            <!-- bx filter END -->
 
                             <!-- catalogue subscribe -->
                             <div class="catalogue-subscribe">
