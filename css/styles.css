@@ -756,17 +756,13 @@ nav > ul > li.active > a > span {color:#fff; background:#0f672d; text-decoration
 .bx-ui-slider-track {height:5px; background:#e6e6e6; position:relative}
 
 .bx-filter .bx-ui-slider-pricebar-vd {background:#e6e6e6}
-.bx-filter .bx-ui-slider-pricebar-vd {z-index:60}
 .bx-filter .bx-ui-slider-pricebar-vn {background:#e6e6e6}
-.bx-filter .bx-ui-slider-pricebar-vn {z-index:70}
 .bx-filter .bx-ui-slider-pricebar-v {background:#e6e6e6}
-.bx-filter .bx-ui-slider-pricebar-v {z-index:80}
 .bx-filter .bx-ui-slider-range,
 .bx-filter .bx-ui-slider-pricebar,
 .bx-filter .bx-ui-slider-pricebar-vd,
 .bx-filter .bx-ui-slider-pricebar-vn,
 .bx-filter .bx-ui-slider-pricebar-v {bottom:0; position:absolute; top:0}
-.bx-filter .bx-ui-slider-range {z-index:90}
 .bx-ui-slider-handle {position:absolute; width:19px; height:19px; top:-7px; border-radius:10px; background:#0f672d; cursor:pointer}
 .bx-ui-slider-handle.left {margin-left:-10px}
 .bx-ui-slider-handle.right {margin-right:-10px}
@@ -1193,7 +1189,6 @@ table.detail-nutrit td:first-child {padding:6px 0; text-align:left; width:100%}
 
 .bx-soa-section-content {padding:14px 0 38px 0}
 .bx-soa-section-content.container-fluid {padding:0}
-
 
 .bx-soa-item-table {display:table; width:100%; margin-top:26px}
 .bx-soa-item-tr {display:table-row}
