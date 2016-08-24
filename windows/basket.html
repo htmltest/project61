@@ -1,5 +1,6 @@
 <div class="window-basket">
-    <h2>Добавление в корзину</h2>
+    <h2>Товар добавлен в корзину</h2>
+    <div class="window-basket-count">Всего в вашей корзине 2 товара. <a href="#">Просмотреть</a></div>
     <form action="#" method="post">
         <div class="basket-content">
             <!-- basket row -->
@@ -9,15 +10,10 @@
                     <div class="basket-title"><a href="#">Сыр Швейцарский твердый</a></div>
                     <div class="basket-weight">200 грамм</div>
                 </div>
-                <div class="basket-row-price"><span>320</span> &#8381;</div>
-                <div class="basket-row-count">
-                    <div class="form-input">
-                        <input type="text" name="count[]" value="1" step="1" min="1" />
-                        <a class="plus" onclick="setQuantity(1, 1, 'up', false);" href="javascript:void(0);"></a>
-                        <a class="minus" onclick="setQuantity(1, 1, 'down', false);" href="javascript:void(0);"></a>
-                    </div>
+                <div class="window-basket-price">
+                    <div class="window-basket-price-text">320 &#8381;</div>
+                    <div class="window-basket-price-count">1 шт</div>
                 </div>
-                <div class="basket-row-summ">= <span>320</span> &#8381;</div>
             </div>
             <!-- basket row END -->
         </div>
