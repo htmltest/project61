@@ -8,7 +8,7 @@ a:hover {color:#231f20}
 img {border:none}
 
 p {margin:25px 0}
-h1 {font:30px/30px "PT Serif", serif; margin:47px 0 48px 0; padding:0; color:#231f20}
+h1 {font:40px/40px "PT Serif", serif; margin:47px 0 48px 0; padding:0; color:#231f20}
 h2 {font:30px/30px "PT Serif", serif; margin:48px 0 36px 0; padding:0; color:#231f20}
 h3 {font:25px/30px "PT Serif", serif; margin:49px 0 31px 0; padding:0; color:#231f20}
 h4 {font:20px/25px "PT Serif", serif; margin:41px 0 29px 0; padding:0; color:#231f20}
@@ -140,6 +140,9 @@ form {margin:25px 0; padding:0}
 @media (max-width:1169px) {
     .pager {text-align:left}
 }
+
+.img-left {float:left; clear:left; padding:6px 30px 10px 0; width:50%; box-sizing:border-box}
+.img-right {float:right; clear:right; padding:6px 0 10px 30px; width:50%; box-sizing:border-box}
 
 .wrapper {min-width:480px; min-height:100%; width:100%; position:relative; overflow:hidden}
 .wrapper-inner {padding:0 0 400px 0}
@@ -588,6 +591,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .icons div {float:left; width:57px; height:56px; margin:0 3px 0 0}
 .icon-new {background:url(../images/icon-new.png)}
 .icon-discount {background:url(../images/icon-discount.png)}
+.icon-discount-text {background:url(../images/icon-discount-text.png); font:bold 11px/56px "PT Serif", serif; color:#fff; text-align:center; letter-spacing:0}
 .icon-hit {background:url(../images/icon-hit.png)}
 
 .icons-2 {left:10px; top:10px}
@@ -945,6 +949,8 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .detail-photo-preview ul li a:hover img {opacity:.8}
 .detail-photo-preview ul li.active a img {opacity:1}
 
+.detail-photo-max {display:none}
+
 @media (max-width:1169px) {
     .detail-photo-preview ul li {width:25%; padding:19px 12px 0 12px}
 }
@@ -1008,17 +1014,19 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
     .detail-slider-ctrl a.active {opacity:1}
 }
 
-.detail-order {margin:36px 0 0 0}
-.detail-order form {margin:0; padding:0; display:table; width:100%}
+.detail-order {margin:36px 0 0 0; display:table; width:100%}
+.detail-order form {margin:0; padding:0; display:table-cell; vertical-align:top; width:271px}
+.detail-order form+form {width:auto}
 .detail-order .form-input {display:table-cell; width:67px; padding:0 24px 0 0; vertical-align:top; margin:0}
 .detail-order .form-input input {height:50px; padding:11px 25px 12px 16px}
 .form-submit-detail-buy {display:table-cell; vertical-align:top; margin:0; width:165px; padding:0 15px 0 0}
 .form-submit-detail-buy input {background:#005a4f; border-color:#005a4f; color:#fff; transition:all .5s ease}
 .form-submit-detail-buy input:hover {background:#108e3b; border-color:#108e3b}
-.form-submit-detail-fast {display:table-cell}
+.form-submit-detail-fast {margin:0}
 
 @media (max-width:1169px) {
-    .detail-order form {display:block}
+    .detail-order {display:block}
+    .detail-order form {display:block; width:100%}
     .detail-order form:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
     .detail-order .form-input {display:block; float:left}
     .form-submit-detail-buy {display:block; margin:0 0 0 91px; width:auto; padding:0}
@@ -1036,9 +1044,21 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .detail-link-pay {float:right; padding:0 0 0 31px; background:url(../images/detail-link-pay.png) no-repeat left center}
 .detail-link-delivery {float:right; padding:0 0 0 30px; margin:0 20px 0 0; background:url(../images/detail-link-delivery.png) no-repeat left center}
 
-.detail-links-window {position:absolute; left:0; top:-21px; text-align:left; width:100%; font-size:16px; overflow:hidden; background:#fff; border:3px solid #005a4f; z-index:99; box-shadow:0 0 25px rgba(18, 49, 29, .41); box-sizing:border-box; padding:0 18px 30px 65px}
-.detail-links-window-content {width:100%; max-height:380px; position:relative; overflow:hidden}
-.detail-links-window h2 {margin:0; padding:32px 0 28px 0}
+.detail-links-window {position:absolute; left:0; top:-21px; text-align:left; width:100%; font-size:16px; overflow:hidden; background:#fff; border:3px solid #149d42; z-index:39; box-shadow:0 0 25px rgba(18, 49, 29, .41); box-sizing:border-box; padding:0 18px 30px 47px}
+.detail-links-window-content {width:100%; max-height:380px; position:relative; overflow:hidden; font-size:14px; line-height:20px; padding:0 30px 0 0; box-sizing:border-box}
+.detail-links-window-content p {margin:20px 0}
+ul {margin:20px 0}
+ul li {margin:10px 0}
+ul li:before {top:7px}
+ol {margin:20px 0}
+ol li {margin:10px 0}
+.detail-links-window p:first-child,
+.detail-links-window ul:first-child,
+.detail-links-window ol:first-child {margin-top:0}
+.detail-links-window p:last-child,
+.detail-links-window ul:last-child,
+.detail-links-window ol:last-child {margin-bottom:0}
+.detail-links-window h2 {margin:0; padding:32px 0 28px 0; font-size:25px}
 .detail-links-window-close {position:absolute; right:14px; top:15px; width:12px; height:12px; display:block; background:url(../images/close.png)}
 .detail-links-window-close:hover {background-position:left -12px}
 
@@ -1638,3 +1658,20 @@ footer {height:360px; margin:-360px 0 0 0; background:#f7f7f7; position:relative
     .order-ctrl {position:static; right:auto; top:auto; bottom:auto; width:auto; padding:30px; background:#f6f9f7; margin:0 -30px}
     .order-ctrl {padding-top:0}
 }
+
+.fast-window {margin:0 19px 0 0}
+.fast-window-text {font-size:14px; line-height:20px; padding:10px 0 0 0}
+.fast-window form {margin:0}
+.fast-window .form-label {float:none; width:auto; padding:0 0 20px 0}
+.fast-window .form-field {margin:0}
+.fast-window .form-input label.error {display:none !important}
+.fast-window .form-submit {margin:35px 0 0 0}
+.fast-window .form-submit input {background:#005a4f; border-color:#005a4f; color:#fff}
+.fast-window .form-submit input:hover {background:#108e3b; border-color:#108e3b}
+
+.news-date {font-size:15px; color:#005a4f; margin:-35px 0 33px 0}
+
+.news-ctrl {margin:50px 0 25px 0; border-top:1px solid #eff0f4; padding:40px 0 0 0}
+.news-ctrl:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.news-back {float:left}
+.news-social {float:right}
