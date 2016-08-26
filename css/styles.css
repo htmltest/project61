@@ -97,11 +97,12 @@ form {margin:25px 0; padding:0}
 .form-checkbox {float:left; margin:14px 0 0 28px; cursor:pointer; position:relative; padding:0 0 0 30px; opacity:.25; transition:all .5s ease}
 .form-checkbox.checked {opacity:1}
 .form-checkbox input {display:none}
-.form-checkbox span {display:block; position:absolute; left:0; top:4px; width:17px; height:17px; border:1px solid #231f20; background:url(../images/checkbox.png) no-repeat center; transition:all .5s ease}
+.form-checkbox span {display:block; position:absolute; left:0; top:4px; width:17px; height:17px; border:1px solid #231f20; background:url(../images/checkbox.png) no-repeat -999px -999px; transition:opacity .5s ease}
 .form-checkbox.error {color:#f00; opacity:.5}
 .form-checkbox.error span {border-color:#f00}
 .form-checkbox label.error {display:none !important}
 .form-checkbox.checked {opacity:1; color:#000}
+.form-checkbox.checked span {background-position:center}
 .form-checkbox-all {float:left; margin:14px 0 0 28px; padding:0 0 0 30px; font-family:"PT Serif", serif}
 .form-checkbox-all a {text-decoration:none}
 .form-checkbox-all a:hover {text-decoration:underline; color:#005a4f}
@@ -509,8 +510,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .recommend-item-inner {border:1px solid #d9d9d9; padding:9px; background:#fff; transition:border-color .5s ease}
 .recommend-item-inner:hover {border-color:#87b396}
 .recommend-item-image {line-height:0; position:relative}
-.recommend-item-image img {width:100%}
-.recommend-item-image a {display:block; position:relative}
+.recommend-item-image a {display:block; position:relative; text-align: auto}
 .recommend-item-content {background:#fff; padding:23px 30px 14px 30px; position:relative}
 .recommend-item-title {font:25px/30px "PT Serif", serif; color:#231f20; position:relative}
 .recommend-item-title a {color:#231f20; text-decoration:none}
@@ -725,7 +725,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .bx-filter .bx-filter-popup-result.right {left:100%; margin-left:-33px}
 .bx-filter .bx-filter-popup-result.right {padding-left:25px; background:url(../images/result_popup_right.png)}
 .bx-filter .bx-filter-popup-result.right:after {content:""; display:block; width:5px; height:49px; background:url(../images/result_popup_right_side.png); position:absolute; right:-5px; top:1px}
-.bx-filter .bx-filter-popup-result {color:#333; display:none; font-size:14px; font-weight:normal; line-height:37px; height:37px; padding:6px 0 8px 0; top:0; position:absolute; white-space:nowrap; z-index:915}
+.bx-filter .bx-filter-popup-result {color:#333; display:none; font-size:14px; font-weight:normal; line-height:37px; height:37px; padding:6px 0 8px 0; top:11px; position:absolute; white-space:nowrap; z-index:10}
 .bx-filter .bx-filter-popup-result br {display:none}
 .bx-filter .bx-filter-popup-result a {display:inline-block; margin:0 0 0 15px; vertical-align:top; font:12px/37px "PT Serif", serif; color:#fff; text-transform:uppercase; background:#005a4f; padding:0 20px; transition:background-color .5s ease; text-decoration:none}
 .bx-filter .bx-filter-popup-result a:hover {background-color:#108e3b}
@@ -883,8 +883,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .catalogue-item-inner:hover {border-color:#005a4f}
 .catalogue-list-wide .catalogue-item {width:25%}
 .catalogue-item-photo {position:relative}
-.catalogue-item-photo a {display:block; position:relative}
-.catalogue-item-photo img {width:100%}
+.catalogue-item-photo a {display:block; position:relative; text-align:center}
 .catalogue-item-name {font:20px/25px "PT Serif", serif; color:#231f20; letter-spacing:0; padding:20px 0 0 0; position:relative}
 .catalogue-item-name a {color:#231f20; text-decoration:none}
 .catalogue-item-name a:hover {color:#005a4f}
@@ -898,6 +897,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .catalogue-item-buy a:hover {border-color:#005a4f; background:#005a4f; color:#fff}
 
 .catalogue-list-history {padding:0 0 54px 0}
+.detail-history .catalogue-list:after {display:none}
 
 @media (max-width:1169px) {
     .catalogue-item {width:50%}
@@ -1210,6 +1210,8 @@ table.detail-nutrit+.detail-descr {margin:20px 0}
 .bx-soa-editstep:hover {text-decoration:underline; color:#005a4f}
 .bx-soa-section.bx-selected .bx-soa-editstep {display:none}
 
+.bx-soa-item-tr.bx-soa-item-info-container {display:none}
+
 .bx-soa-section-content {padding:14px 0 38px 0}
 .bx-soa-section-content.container-fluid {padding:0}
 
@@ -1227,7 +1229,7 @@ table.detail-nutrit+.detail-descr {margin:20px 0}
 .bx-soa-item-td-text {font-size:16px; color:#005a4f; padding:1px 0 0 0}
 .bx-soa-item-td-text .bx-price {font-weight:normal}
 .bx-soa-item-td-title {display:none}
-.bx-soa-item-properties {text-align:right}
+.bx-soa-item-properties {text-align:right; white-space:nowrap}
 .bx-soa-item-properties .bx-soa-item-td-text {color:#231f20; font:20px/25px "PT Serif", serif; padding:0}
 
 @media (max-width:767px) {
@@ -1251,7 +1253,8 @@ table.detail-nutrit+.detail-descr {margin:20px 0}
 .bx-soa-more a.pull-left:hover {border-color:#e7f0ea; background:#e7f0ea}
 
 .bx-soa-sidebar {display:table-cell; vertical-align:top; width:263px; padding:55px 0 0 30px}
-.bx-soa-cart-total {border:1px solid #005a4f; padding:19px 40px 13px 40px; font-family:"PT Serif", serif; color:#231f20}
+.bx-soa-cart-total {border:1px solid #005a4f; padding:19px 40px 13px 40px; font-family:"PT Serif", serif; color:#231f20; box-sizing:border-box; width:100%}
+.bx-soa-cart-total.bx-soa-cart-total-fixed {position:fixed; top:90px}
 .bx-soa-cart-total-line {border-bottom:1px solid #ededed; padding:14px 0 20px 0}
 .bx-soa-cart-total-line:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .bx-soa-cart-t {float:left; font-size:20px; line-height:25px; opacity:.5}
@@ -1264,6 +1267,9 @@ table.detail-nutrit+.detail-descr {margin:20px 0}
     .bx-soa-sidebar {display:block; width:auto; padding:0}
     .bx-soa-cart-total-line-total .bx-soa-cart-t {float:left}
     .bx-soa-cart-total-line-total .bx-soa-cart-d {float:right; padding:0}
+    .bx-soa-cart-total.bx-soa-cart-total-fixed {position:static; top:auto}
+    .bx-soa-cart-total-ghost {padding-top:0 !important}
+    .bx-soa-cart-total {visibility:visible !important; z-index:auto !important}
 }
 
 .bx-soa-location-input-container {margin:20px 0}

@@ -931,4 +931,15 @@ var sliderTimer     = null;
         }
     });
 
+    $(window).bind('load resize scroll', function() {
+        $('.bx-soa-cart-total').each(function() {
+            var curBlock = $(this);
+            if (curBlock.offset().top - $(window).scrollTop() + curBlock.outerHeight() > $('.content').offset().top + $('.content').outerHeight() - $(window).scrollTop()) {
+                curBlock.css({'visibility': 'hidden', 'z-index': '-1'});
+            } else {
+                curBlock.css({'visibility': 'visible', 'z-index': 'auto'});
+            }
+        });
+    });
+
 })(jQuery);
