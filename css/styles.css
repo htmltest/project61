@@ -510,7 +510,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .recommend-item-inner {border:1px solid #d9d9d9; padding:9px; background:#fff; transition:border-color .5s ease}
 .recommend-item-inner:hover {border-color:#87b396}
 .recommend-item-image {line-height:0; position:relative}
-.recommend-item-image a {display:block; position:relative; text-align: auto}
+.recommend-item-image a {display:block; position:relative; text-align:center}
 .recommend-item-content {background:#fff; padding:23px 30px 14px 30px; position:relative}
 .recommend-item-title {font:25px/30px "PT Serif", serif; color:#231f20; position:relative}
 .recommend-item-title a {color:#231f20; text-decoration:none}
@@ -725,7 +725,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .bx-filter .bx-filter-popup-result.right {left:100%; margin-left:-33px}
 .bx-filter .bx-filter-popup-result.right {padding-left:25px; background:url(../images/result_popup_right.png)}
 .bx-filter .bx-filter-popup-result.right:after {content:""; display:block; width:5px; height:49px; background:url(../images/result_popup_right_side.png); position:absolute; right:-5px; top:1px}
-.bx-filter .bx-filter-popup-result {color:#333; display:none; font-size:14px; font-weight:normal; line-height:37px; height:37px; padding:6px 0 8px 0; top:11px; position:absolute; white-space:nowrap; z-index:10}
+.bx-filter .bx-filter-popup-result {color:#333; display:none; font-size:14px; font-weight:normal; line-height:37px; height:37px; padding:6px 0 8px 0; top:50%; margin-top:-12px; position:absolute; white-space:nowrap; z-index:10}
 .bx-filter .bx-filter-popup-result br {display:none}
 .bx-filter .bx-filter-popup-result a {display:inline-block; margin:0 0 0 15px; vertical-align:top; font:12px/37px "PT Serif", serif; color:#fff; text-transform:uppercase; background:#005a4f; padding:0 20px; transition:background-color .5s ease; text-decoration:none}
 .bx-filter .bx-filter-popup-result a:hover {background-color:#108e3b}
@@ -1649,8 +1649,10 @@ footer {height:360px; margin:-360px 0 0 0; background:#f7f7f7; position:relative
 
 .order-status {position:absolute; right:0; top:30px; width:42%; padding:0 30px; box-sizing:border-box}
 .order-status div {padding:15px 0 18px 0; text-align:center}
-.order-status-1 div {background:#ffde00}
-.order-status-2 div {background:#005a4f; color:#fff}
+.yellow div {background:#ffde00}
+.red div {background:#f00; color:#fff}
+.gray div {background:#808080; color:#fff}
+.green div {background:#005a4f; color:#fff}
 
 .order-ctrl {position:absolute; right:0; bottom:30px; width:42%; padding:0 30px; box-sizing:border-box}
 .order-ctrl a {display:block; height:38px; border:1px solid #c8dccf; color:#231f20; font:13px/38px "PT Serif", serif; text-transform:uppercase; text-decoration:none; text-align:center; margin:10px 0 0 0; transition:all .5s ease}
