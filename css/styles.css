@@ -1256,6 +1256,11 @@ table.detail-nutrit+.detail-descr {margin:20px 0}
 .bx-soa-more a.pull-left {float:left; width:261px; height:38px; color:#231f20; background:transparent; border:1px solid #87b396; line-height:38px; transition:all .5s ease}
 .bx-soa-more a.pull-left:hover {border-color:#e7f0ea; background:#e7f0ea}
 
+@media (max-width:767px) {
+    .bx-soa-more a,
+    .bx-soa-more a.pull-left {width:200px}
+}
+
 .bx-soa-sidebar {display:table-cell; vertical-align:top; width:263px; padding:55px 0 0 30px}
 .bx-soa-cart-total {border:1px solid #005a4f; padding:19px 40px 13px 40px; font-family:"PT Serif", serif; color:#231f20; box-sizing:border-box; width:100%}
 .bx-soa-cart-total.bx-soa-cart-total-fixed {position:fixed; top:90px}
