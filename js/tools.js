@@ -158,6 +158,12 @@ var sliderTimer     = null;
             e.preventDefault();
         });
 
+        $('.detail-photo').each(function() {
+            if ($('.detail-photo-preview ul li').length < 2) {
+                $('.detail-photo-next, .detail-photo-prev').hide();
+            }
+        });
+
         $('.detail-photo-preview ul li a').click(function(e) {
             var curLink = $(this);
             var curLi = curLink.parent();
@@ -874,6 +880,11 @@ var sliderTimer     = null;
         }
 
         $('.window-close').click(function(e) {
+            if ($('.warning-form .form-checkbox input:checked').length == 1) {
+                $.cookie('warning', '1');
+            } else {
+                window.location = '01_main.html';
+            }
             windowClose();
             e.preventDefault();
         });

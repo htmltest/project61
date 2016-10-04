@@ -1052,11 +1052,11 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .detail-links-window {position:absolute; left:0; top:-21px; text-align:left; width:100%; font-size:16px; overflow:hidden; background:#fff; border:3px solid #149d42; z-index:39; box-shadow:0 0 25px rgba(18, 49, 29, .41); box-sizing:border-box; padding:0 18px 30px 47px}
 .detail-links-window-content {width:100%; max-height:380px; position:relative; overflow:hidden; font-size:14px; line-height:20px; padding:0 30px 0 0; box-sizing:border-box}
 .detail-links-window-content p {margin:20px 0}
-ul {margin:20px 0}
-ul li {margin:10px 0}
-ul li:before {top:7px}
-ol {margin:20px 0}
-ol li {margin:10px 0}
+.detail-links-window-contentul {margin:20px 0}
+.detail-links-window-contentul li {margin:10px 0}
+.detail-links-window-contentul li:before {top:7px}
+.detail-links-window-contentol {margin:20px 0}
+.detail-links-window-contentol li {margin:10px 0}
 .detail-links-window p:first-child,
 .detail-links-window ul:first-child,
 .detail-links-window ol:first-child {margin-top:0}
