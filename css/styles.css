@@ -938,7 +938,8 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 
 .detail-photo-big {line-height:0; position:relative}
 .detail-photo-big img {width:100%}
-.detail-photo-zoom {display:block; width:40px; height:40px; background:#fff url(../images/zoom.png) no-repeat center; border-radius:20px; position:absolute; right:10px; top:10px}
+.detail-photo-zoom {display:block; width:100%; height:100%;position:absolute; left:0; top:0}
+.detail-photo-zoom:after {content:""; display:block; width:40px; height:40px; background:#fff url(../images/zoom.png) no-repeat center; border-radius:20px; position:absolute; right:10px; top:10px}
 .detail-photo-prev,
 .detail-photo-next {display:block; width:40px; height:40px; background:#fff no-repeat center; border-radius:20px; position:absolute; top:50%; margin-top:-20px}
 .detail-photo-prev {left:10px; background-image:url(../images/photo-prev.png)}
