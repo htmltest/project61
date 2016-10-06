@@ -200,6 +200,11 @@ var sliderTimer     = null;
                 closeBtn : '<a title="Закрыть" class="fancybox-item fancybox-close" href="javascript:;"></a>',
                 next     : '<a title="Следующая" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
                 prev     : '<a title="Предыдущая" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
+            },
+            helpers: {
+                overlay : {
+                    locked : false
+                }
             }
         });
 
