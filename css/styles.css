@@ -1772,3 +1772,11 @@ footer {height:360px; min-width:480px; width:100%; margin:-360px 0 0 0; backgrou
 }
 
 .text {padding:0 15px}
+
+.wine-shops {background:#fcfcfc; border:1px solid #ececec; padding:20px 30px 18px 30px; font-size:14px; line-height:20px; margin:17px 0 -20px 0}
+.wine-shops p {margin:20px 0 0 0}
+.wine-shops p:first-child {margin-top:0}
+.wine-shops a {color:#22733d}
+.wine-shops a:hover {color:#005a4f}
+.detail-link-shops-3 {position:static; display:inline; float:none; background:url(../images/detail-link-shops-3.png) repeat-x left bottom; margin:0; padding:0; color:#22733d; text-decoration:none; font-size:14px; line-height:20px}
+.detail-link-shops-3:hover {color:#005a4f; background:none}
