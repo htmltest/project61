@@ -930,6 +930,11 @@ var sliderTimer     = null;
 
     function keyUpBody(e) {
         if (e.keyCode == 27) {
+            if ($('.warning-form .form-checkbox input:checked').length == 1) {
+                $.cookie('warning', '1');
+            } else {
+                window.location = '01_main.html';
+            }
             windowClose();
         }
     }
