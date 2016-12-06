@@ -982,6 +982,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 
 @media (max-width:767px) {
     .detail-content h1 {text-align:center}
+    .detail-content .icons {display:none}
 }
 
 .detail-params {font-size:14px; color:#777; line-height:20px; margin:15px 0 0 0}
@@ -1018,6 +1019,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
     .detail-slider-ctrl a {display:inline-block; vertical-align:middle; width:19px; height:19px; border-radius:8px; margin:0 0 0 11px; background:#fff; opacity:.5}
     .detail-slider-ctrl a:first-child {margin:0}
     .detail-slider-ctrl a.active {opacity:1}
+    .detail-content .detail-slider .icons {display:block; left:15px; z-index:4; top:15px; position:absolute; right:auto; margin:0}
 }
 
 .detail-order {margin:36px 0 0 0; display:table; width:100%}
@@ -1074,9 +1076,12 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
     .detail-links > a {display:inline-block; float:none; margin:7px 10px}
 
     .detail-links-window {top:0}
+    .detail-links-window-close {position:absolute; right:27px; top:45px; width:10px; height:10px; display:block; background:url(../images/window-close-mobile.png)}
+    .detail-links-window-close:hover {background-position:left top}
 }
 
 @media (max-width:767px) {
+    .detail-links-window {width:auto; left:10px; right:10px}
     .detail-links > a {margin:7px 18px}
     .detail-link-shops-2 {width:100%; margin-bottom:45px}
 }
@@ -1533,7 +1538,9 @@ footer {height:360px; min-width:480px; width:100%; margin:-360px 0 0 0; backgrou
 .window-close:hover {background-position:left -12px}
 
 @media (max-width:1169px) {
-    .window-close {width:0px; padding:0 0 0 12px; height:12px; overflow:hidden; font-size:0; line-height:0; letter-spacing:-1px; right:30px; top:46px}
+    .window-close {width:0px; padding:0 0 0 10px; height:10px; overflow:hidden; font-size:0; line-height:0; letter-spacing:-1px; right:27px; top:45px; background:url(../images/window-close-mobile.png)}
+    .window-close:hover {background-position:left top}
+    .window-content {border:3px solid #149d42}
 }
 
 .warning {width:748px; padding:0 50px 29px 50px}
@@ -1568,12 +1575,17 @@ footer {height:360px; min-width:480px; width:100%; margin:-360px 0 0 0; backgrou
 .window-basket-close:hover {border-color:#e7f0ea; background:#e7f0ea}
 
 @media (max-width:1169px) {
-    .window-basket {width:390px; padding:0 29px 54px 29px}
-    .window-basket .basket-ctrl {padding:32px 0 0 0}
+    .window-basket {width:390px; padding:0 27px 54px 27px}
+    .window-basket h2 {margin-top:30px; letter-spacing:-1px}
+    .window-basket-count {margin-left:10px}
+    .window-basket .basket-content {border-top:1px solid #e6e6e6}
+    .window-basket .basket-row {padding:0 0 38px 0}
+    .window-basket .basket-ctrl {padding:44px 0 0 0}
     .window-basket .basket-ctrl .form-submit {width:100%}
-    .window-basket .basket-photo {border:none; padding:20px 0 0 0}
-    .window-basket .basket-text {border:none; padding:20px 0 0 0}
-    .window-basket-price {border:none; display:block; margin:0 0 0 120px; padding:20px 0 0 0}
+    .window-basket .basket-photo {border:none; padding:40px 0 0 0}
+    .window-basket .basket-text {border:none; padding:37px 0 0 0}
+    .window-basket-price {border:none; display:block; margin:0 0 0 120px; padding:0 0 40px 0; position:relative}
+    .window-basket-price-text {position:absolute; left:0; bottom:0; font-size:20px}
     .window-basket-close {float:none; display:block; margin:10px 0 0 0; width:auto}
 }
 
