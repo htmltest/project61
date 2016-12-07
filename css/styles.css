@@ -1584,6 +1584,7 @@ footer {height:360px; min-width:480px; width:100%; margin:-360px 0 0 0; backgrou
     .window-basket .basket-ctrl .form-submit {width:100%}
     .window-basket .basket-photo {border:none; padding:40px 0 0 0}
     .window-basket .basket-text {border:none; padding:37px 0 0 0}
+    .window-basket .basket-weight {color:#848484}
     .window-basket-price {border:none; display:block; margin:0 0 0 120px; padding:0 0 40px 0; position:relative}
     .window-basket-price-text {position:absolute; left:0; bottom:0; font-size:20px}
     .window-basket-close {float:none; display:block; margin:10px 0 0 0; width:auto}
