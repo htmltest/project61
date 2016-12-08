@@ -1031,7 +1031,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 .form-submit-detail-buy input {background:#005a4f; border-color:#005a4f; color:#fff; transition:all .5s ease}
 .form-submit-detail-buy input:hover {background:#108e3b; border-color:#108e3b}
 .form-submit-detail-fast {margin:0}
-.detail-order noindex {display:block !important}
+.detail-order noindex {display:table-row !important}
 
 @media (max-width:1169px) {
     .detail-order {display:block}
@@ -1040,6 +1040,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
     .detail-order .form-input {display:block; float:left}
     .form-submit-detail-buy {display:block; margin:0 0 0 91px; width:auto; padding:0}
     .form-submit-detail-fast {display:block; float:left; width:100%; margin-top:20px}
+    .detail-order noindex {display:block !important}
 }
 
 .detail-links {font-size:14px; margin:43px 0 0 0; position:relative}
