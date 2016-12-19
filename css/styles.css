@@ -1353,7 +1353,20 @@ table.detail-nutrit+.detail-descr {margin:20px 0}
 .bx-soa-customer-field {margin:20px 0}
 .bx-soa-customer-field:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 
-.bx-soa-coupon .top {border-top:none; border-bottom:none}
+.bx-soa-coupon .top {border-top:none; border-bottom:none; height:auto; padding:0}
+.bx-soa-coupon {margin:20px 0}
+.bx-soa-coupon:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.bx-soa-coupon-label {float:left; font:20px/25px "PT Serif", serif; color:#231f20; padding:5px 0 0 0}
+.bx-soa-coupon-block {float:left; margin:0 0 0 30px}
+.bx-soa-coupon-input {float:left}
+.bx-soa-coupon-input input {display:block !important; vertical-align:top !important; width:100px !important; box-sizing:border-box !important; padding:6px 9px 7px 9px !important; outline:none !important; height:40px !important; border:1px solid #dde0e5 !important; -webkit-appearance:none !important; color:#333 !important; font:16px/25px "Open Sans", sans-serif !important; border-radius:0 !important; transition:all .5s ease !important}
+.bx-soa-coupon-remove {width:12px; height:12px; background:url(../images/close.png); vertical-align:middle; margin:-4px 5px 0 5px; display:inline-block; cursor:pointer}
+.bx-soa-coupon-remove:hover {background-position:left -12px}
+.bx-soa-coupon-item {float:left; margin:7px 0 0 30px}
+.bx-soa-coupon-item strong {display:block}
+.bx-soa-coupon-item .bx-soa-tooltip {display:none}
+.bx-soa-coupon-item-danger {color:#f00}
+.bx-soa-coupon-item-success {color:#108e3b}
 
 #bx-soa-orderSave {border-top:1px solid #005a4f; text-align:right; padding:34px 0 75px 0}
 #bx-soa-orderSave a {display:inline-block; width:263px; height:50px; text-decoration:none; color:#fff; text-align:center; text-transform:uppercase; font:16px/50px "PT Serif", serif; background:#005a4f; transition:all .5s ease}
