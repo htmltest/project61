@@ -1353,6 +1353,8 @@ table.detail-nutrit+.detail-descr {margin:20px 0}
 .bx-soa-customer-field {margin:20px 0}
 .bx-soa-customer-field:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 
+.bx-soa-coupon .top {border-top:none; border-bottom:none}
+
 #bx-soa-orderSave {border-top:1px solid #005a4f; text-align:right; padding:34px 0 75px 0}
 #bx-soa-orderSave a {display:inline-block; width:263px; height:50px; text-decoration:none; color:#fff; text-align:center; text-transform:uppercase; font:16px/50px "PT Serif", serif; background:#005a4f; transition:all .5s ease}
 #bx-soa-orderSave a:hover {background:#108e3b}
