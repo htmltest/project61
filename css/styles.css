@@ -850,20 +850,24 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
 
 .catalogue-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .catalogue-header h1 {float:left; margin:24px 0 0 0}
-.catalogue-sort {float:right}
-.catalogue-sort .form-label {float:left; font-size:16px; line-height:40px; padding:0 15px 0 0; width:auto}
-.catalogue-sort .form-select {float:left; width:185px; margin:0; font-size:14px}
 
-@media (max-width:767px) {
-    .catalogue-header h1 {float:none; margin-bottom:0}
-    .catalogue-sort {padding:0}
-}
+.catalogue-sort {float:right; font:15px/26px "PT Serif", serif; padding:39px 0 0 0}
+.catalogue-sort a {float:left; text-decoration:none; margin:0 0 0 10px; height:26px; padding:0 10px; border-radius:3px}
+.catalogue-sort a:hover {text-decoration:underline}
+.catalogue-sort a:first-child {margin:0}
+.catalogue-sort a.active {color:#fff; background:#005a4f; font-size:13px}
+.catalogue-sort a:after {content:""; display:inline-block; vertical-align:middle; width:7px; height:12px; margin:0 0 0 9px; background:url(../images/catalogue-sort.png)}
+.catalogue-sort a.down:after {background-position:left top}
+.catalogue-sort a.down.active:after {background-position:-7px top}
+.catalogue-sort a.up:after {background-position:left -12px}
+.catalogue-sort a.up.active:after {background-position:-7px -12px}
 
 .catalogue-filter-link {display:none}
 
 @media (max-width:767px) {
     .catalogue-header {position:relative}
-    .catalogue-filter-link {display:block; position:absolute; left:-15px; bottom:25px; height:40px; font:14px/40px "PT Serif", serif; text-transform:uppercase; text-decoration:none; color:#fff; padding:0 14px 0 40px; background:#005a4f url(../images/catalogue-filter-link.png) no-repeat 15px center}
+    .catalogue-sort {padding:90px 0 7px 0}
+    .catalogue-filter-link {display:block; position:absolute; left:-15px; bottom:0; height:40px; font:14px/40px "PT Serif", serif; text-transform:uppercase; text-decoration:none; color:#fff; padding:0 14px 0 40px; background:#005a4f url(../images/catalogue-filter-link.png) no-repeat 15px center}
     .catalogue-filter-link:hover {color:#fff; background-color:#108e3b}
     .open-filter .catalogue-filter-link {left:auto; right:-15px; padding:0 15px 0 18px; background-image:none; z-index:99}
     .catalogue-filter-link:after {content:""; display:block; width:0; height:0; position:absolute; right:-8px; top:0; border-left:8px solid #005a4f; border-top:20px solid transparent; border-bottom:20px solid transparent}
@@ -872,7 +876,7 @@ nav > ul > li.active > a > span {color:#fff; background:#005a4f; text-decoration
     .open-filter .catalogue-filter-link:hover:after {border-right-color:#108e3b}
 }
 
-.catalogue-hint {background:#f6f9f7; padding:22px 30px 26px 30px; margin:-10px 0 20px 0; border:1px solid #dbe8e0; text-align:center}
+.catalogue-hint {background:#f6f9f7; padding:22px 30px 26px 30px; margin:36px 0 20px 0; border:1px solid #dbe8e0; text-align:center}
 @media (max-width:1169px) {
     .catalogue-hint {padding-left:60px; padding-right:60px}
 }
